@@ -1,4 +1,4 @@
-[CmdletBinding]
+[CmdletBinding()]
 Param(
     [string[]] $AllowedUsers
 )
