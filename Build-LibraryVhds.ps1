@@ -3,8 +3,8 @@ $isoroot = "$pwd\library\iso"
 $temp = "$pwd\temp"
 
 if (!(Test-Path .\library-vhds.xml)) { throw "library-vhds.xml not found in current directory"; }
-if (!(Test-Path $vhdroot)) { mkdir $vhdroot; }
-if (!(Test-Path $temp)) { mkdir $temp; }
+if (!(Test-Path $vhdroot)) { [void](mkdir $vhdroot); }
+if (!(Test-Path $temp)) { [void](mkdir $temp); }
 
 $spec = [xml](gc .\library-vhds.xml)
 
