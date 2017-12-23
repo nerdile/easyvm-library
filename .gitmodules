@@ -1,0 +1,6 @@
+[submodule "easyvm"]
+	path = easyvm
+	url = https://github.com/nerdile/easyvm
+[submodule "convert-windowsimage"]
+	path = convert-windowsimage
+	url = https://github.com/nerdile/convert-windowsimage

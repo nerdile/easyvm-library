@@ -1,0 +1,7 @@
+/library/
+/release/
+/temp/
+*.vhd
+*.vhdx
+*.iso
+
