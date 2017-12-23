@@ -1,5 +1,5 @@
 /library/
-/release/
+/tools/
 /temp/
 *.vhd
 *.vhdx
