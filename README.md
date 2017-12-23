@@ -39,6 +39,8 @@ This tool makes it easy to create Windows VM templates.  Please make sure that y
 
 8. Once you've set this up initially, you can very quickly create additional VM's by starting at step 4.  You can also share out your templates with others in your workgroup, so that they can easily create these VM's as well.
 
+9. It is a good idea to commit any changes you made to your library-vhds.xml and other scripts for building your library.  You can push these to a private Git repo for later use.  If you deploy your tools and library on another server, you can also delete the local template files.
+
 
 ## Building Template VHD's ##
 
@@ -67,6 +69,8 @@ You'll need to share two folders:
 - The library of VM templates (VHD's and tasks)
 
 See .\Share-EasyVMFiles.ps1 for an example of how to create these file shares in PowerShell.
+
+You can also prepare the tools\ and library\ folders and then copy them to a shared location.
 
 
 ## Creating your own templates ##
@@ -101,3 +105,10 @@ If you want to provide more dynamic tasks, consider creating your own PowerShell
 Examples of things you can do in your own PowerShell scripts:
 - Dynamic tasks:  You can create a task folder on the fly and pass it as an absolute path to Deploy-EasyVM -AddTask.  For example, you might want find the latest build of your product installer from your build share.
 - Override VHD:  You can substitute a VHD of the same generation and architecture by passing -OverrideVHD.  For example, you might want to try an existing template with the latest Windows Insider VHD.
+
+
+## Troubleshooting ##
+
+The most common issue that can happen is a template VHD remaining mounted while preparing or specializing an image.  You can use File Explorer > This PC to find and eject the VHD, or use Disk Management and look for the blue disks that indicate mounted VHD's.
+
+EasyVM caches heavily.
