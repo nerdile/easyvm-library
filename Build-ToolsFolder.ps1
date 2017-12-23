@@ -1,5 +1,5 @@
-del -force -recurse "$pwd\tools"
-mkdir "$pwd\tools\modules\easyvm"
+del -force -recurse "$pwd\tools" -ea 0
+[void](mkdir "$pwd\tools\modules\easyvm");
 copy "$pwd\easyvm\easyvm.psm1" tools\modules\easyvm\.
 
 # Include any team-specific powershell modules, if desired
