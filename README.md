@@ -110,5 +110,3 @@ Examples of things you can do in your own PowerShell scripts:
 ## Troubleshooting ##
 
 The most common issue that can happen is a template VHD remaining mounted while preparing or specializing an image.  You can use File Explorer > This PC to find and eject the VHD, or use Disk Management and look for the blue disks that indicate mounted VHD's.
-
-EasyVM caches heavily.
