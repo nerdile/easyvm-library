@@ -48,7 +48,7 @@
         <Username>Administrator</Username>
         <Domain>-</Domain>
         <Password>
-          <Value>SecurePasswd123</Value>
+          <Value>-</Value>
           <PlainText>true</PlainText>
         </Password>
       </AutoLogon>
