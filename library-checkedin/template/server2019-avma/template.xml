@@ -1,0 +1,6 @@
+<template version="1">
+  <image file="server2019.datacenter" productkey="H3RNG-8C32Q-Q8FRX-6TDXV-WMBMW"/>
+  <tasks>
+    <task id="corevm-drive-setup"/>
+  </tasks>
+</template>
